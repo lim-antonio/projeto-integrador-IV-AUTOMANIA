@@ -11,7 +11,7 @@ const About: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in-up">
-            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=800&auto=format&fit=crop" alt="Oficina Automania" className="rounded-lg shadow-2xl w-full object-cover h-[400px]"/>
+            <img src="public/images/sobre.png" alt="Oficina Automania" className="rounded-lg shadow-2xl w-full object-cover h-[400px]"/>
           </div>
           <div className="text-lg text-gray-700 space-y-4 animate-slide-in-up" style={{ animationDelay: '0.2s' }}>
             <p>
