@@ -1,5 +1,8 @@
-
 import React from 'react';
+
+// 1. IMPORTAÇÃO DA IMAGEM
+// O "../" serve para sair da pasta components e ir para a pasta assets
+import sobreImg from '../assets/images/sobre.png';
 
 const About: React.FC = () => {
   return (
@@ -11,7 +14,14 @@ const About: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in-up">
-            <img src="public/images/sobre.png" alt="Oficina Automania" className="rounded-lg shadow-2xl w-full object-cover h-[400px]"/>
+            
+            {/* 2. USO DA VARIÁVEL IMPORTADA NO SRC */}
+            <img 
+              src={sobreImg} 
+              alt="Oficina Automania" 
+              className="rounded-lg shadow-2xl w-full object-cover h-[400px]"
+            />
+
           </div>
           <div className="text-lg text-gray-700 space-y-4 animate-slide-in-up" style={{ animationDelay: '0.2s' }}>
             <p>
