@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automania - Acessórios Automotivos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'automania-red': '#E60000',
+              'automania-dark': '#1a1a1a',
+              'automania-light': '#f3f4f6',
+              'automania-card': '#ffffff',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'slide-in-up': 'slideInUp 0.5s ease-out forwards'
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              slideInUp: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+            color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+        }
+        .hexagon-bg {
+            background-color: #f3f4f6;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNC42NCIgdmlld0JveD0iMCAwIDMwIDM0LjY0Ij48cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNlN2U3ZTciIHN0cm9rZS13aWR0aD0iMSIgcG9pbnRzPSIyMi41LDguNjYgNy41LDguNjYgMCwxNy4zMiA3LjUsMjUuOTggMjIuNSwyNS45OCAzMCwxNy4zMiAyMi41LDguNjYgIi8+PC9zdmc+');
+            background-repeat: repeat;
+        }
+        .car-hotspot {
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .car-hotspot:hover, .car-hotspot.active {
+            fill: #E60000;
+            stroke: #fff;
+            stroke-width: 2px;
+            transform: scale(1.05);
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/projeto-integrador-IV-AUTOMANIA/assets/index-CIO3P4AG.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
